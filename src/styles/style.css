@@ -11,11 +11,64 @@ body{
     align-items: center;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
-}
-.container {
+    color: aliceblue;
     background: #0a0a0a;
 
+}
+button {
+    all: unset;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    background: #757575;
+    border-radius: 15px;
+    margin: .25rem;
+
+    transition: all ease-in .05s;
+}
+
+button:hover{
+    opacity: .85;
+}
+
+button:active{
+    transform: scale(0.97);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.top .result-printing{
+    flex: 3;
+    width: auto;
+    height: 50px;
+    background: whitesmoke;
+    border-radius: 15px;
+    margin: .25rem;
+
+}
+.main-body{
+    display: flex;
+    flex-direction: row;
+}
+.number-pad{
     display: grid;
-    grid-template-columns: repeat(4, minmax(1fr, auto));
-    grid-template-rows: repeat(4, minmax(1fr, auto));
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+.number-pad .calc{
+}
+.calc-pad{
+    display: flex;
+    flex-direction: column;
+}
+.calc-pad button{
+    background: darkorange;
+
 }
