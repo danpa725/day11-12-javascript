@@ -1,0 +1,13 @@
+{
+  "name": "day10~11",
+  "version": "1.0.0",
+  "description": "Calculator App",
+  "main": "index.js",
+  "author": "JUNE",
+  "license": "MIT",
+  "dependencies": {
+    "parcel": "^1.12.4"
+  },"scripts": {
+    "start": "parcel ./src/main.html"
+  }
+}
