@@ -10,8 +10,6 @@ const DIVIDE = "DIVIDE";
 
 const RESULT = "RESULT";
 
-const RESTART = "RESTART";
-
 let calcArr = [];
 //계산을 위한 배열
 let numArr = [];
@@ -43,7 +41,6 @@ const printResult = (calcArr) => {
             printOutput.innerText = `${result1}`;
 
             if (isRequestIsResult) restart();
-
             break;
 
         case MINUS:
@@ -51,7 +48,6 @@ const printResult = (calcArr) => {
             printOutput.innerText = `${result2}`;
 
             if (isRequestIsResult) restart();
-
             break;
 
         case MULTIPLE:
@@ -59,7 +55,6 @@ const printResult = (calcArr) => {
             printOutput.innerText = `${result3}`;
 
             if (isRequestIsResult) restart();
-
             break;
 
         case DIVIDE:
@@ -67,7 +62,9 @@ const printResult = (calcArr) => {
             printOutput.innerText = `${result4}`;
 
             if (isRequestIsResult) restart();
+            break;
 
+        default:
             break;
     }
 };
