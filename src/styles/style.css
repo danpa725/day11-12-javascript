@@ -13,22 +13,22 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: aliceblue;
     background: #0a0a0a;
-
+    font-size: 1.25rem;
 }
 button {
     all: unset;
     text-align: center;
     width: 150px;
-    height: 50px;
-    background: #757575;
-    border-radius: 15px;
+    height: 65px;
+    background: #3b3b3b;
+    border-radius: 10px;
     margin: .25rem;
 
     transition: all ease-in .05s;
 }
 
 button:hover{
-    opacity: .85;
+    opacity: .75;
 }
 
 button:active{
@@ -47,11 +47,15 @@ button:active{
 .top .result-printing{
     flex: 3;
     width: auto;
-    height: 50px;
-    background: whitesmoke;
-    border-radius: 15px;
-    margin: .25rem;
+    height: 65px;
+    font-size: 2rem;
 
+    margin: .25rem;
+    margin-right: .5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 .main-body{
     display: flex;
@@ -62,13 +66,17 @@ button:active{
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
 }
-.number-pad .calc{
+.number-pad .result{
+    background: #a5a5a5;
+    width: auto;
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
+
 .calc-pad{
     display: flex;
     flex-direction: column;
 }
 .calc-pad button{
     background: darkorange;
-
 }
